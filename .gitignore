@@ -1,0 +1,4 @@
+.vscode
+
+# ignore all the class binary files
+/**/*.class
