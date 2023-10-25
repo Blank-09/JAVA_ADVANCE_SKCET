@@ -1,4 +1,8 @@
 .vscode
 
+# Scripts to download Java Programs using SKCET API
+# Automating the process of downloading the programs from SKCET Portal
+automate
+
 # ignore all the class binary files
 /**/*.class
