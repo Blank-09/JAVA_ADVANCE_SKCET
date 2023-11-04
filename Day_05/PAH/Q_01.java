@@ -28,13 +28,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
-        
-        if (str.equals("Kiwi"))
-            new Kiwi();
-        else if (str.equals("Cocktail"))
-            new Cocktail();
-        else if (str.equals("Parrot"))
-            new Parrot();
-        else new Birds();
+
+        if (str.equals("Parrot")) {
+            Birds parrot = new Parrot();
+        } else if (str.equals("Cocktail")) {
+            Parrot cocktail = new Cocktail();
+        } else if (str.equals("Kiwi")) {
+            Kiwi kiwi = new Kiwi();
+        }
     }
 }

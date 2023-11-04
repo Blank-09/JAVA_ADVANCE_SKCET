@@ -1,27 +1,28 @@
-#include <iostream>
-using namespace std;
+import java.util.Scanner;
 
-class Wall {
-private:
-    double length, height;
+public class Wall {
+    private double length, height;
 
-public:
-    Wall(double length, double height) {
-        this->length = length;
-        this->height = height;
+    public Wall(double length, double height) {
+        this.length = length;
+        this.height = height;
     }
-    
-    double calculateArea() {
+
+    public double calculateArea() {
         return length * height;
     }
-};
 
-int main() {
-    double l1, l2, h1, h2;
-    cin >> l1 >> h1 >> l2 >> h2;
-    
-    Wall w1(l1, h1), w2(l2, h2);
-    
-    cout << "Area of Wall 1: " <<  w1.calculateArea() << endl;
-    cout << "Area of Wall 2: " <<  w2.calculateArea() << endl;
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double l1 = scanner.nextDouble();
+        double h1 = scanner.nextDouble();
+        double l2 = scanner.nextDouble();
+        double h2 = scanner.nextDouble();
+
+        Wall w1 = new Wall(l1, h1);
+        Wall w2 = new Wall(l2, h2);
+
+        System.out.println("Area of Wall 1: " + w1.calculateArea());
+        System.out.println("Area of Wall 2: " + w2.calculateArea());
+    }
 }
